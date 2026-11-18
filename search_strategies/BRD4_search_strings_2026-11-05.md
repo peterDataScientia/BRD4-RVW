@@ -131,3 +131,36 @@ These strings are archived **verbatim from the search-strategy transcription sup
 Original Scopus, PubMed, Europe PMC, Embase and Web of Science search counts, filters and run timestamps should be reconciled with exported files where available. The approved title-and-abstract ledger records 1,445 screened and 369 retained, which are screening-level counts rather than a replacement for database-level retrieval counts.
 
 **Syntax caution:** PubMed truncation inside quotation marks with `[tiab]` and some quoted phrases may be parsed differently than expected; preserve these archived expressions for provenance and independently check the live query translations before rerunning or describing their execution.
+
+
+## Additional original-conversation Scopus strings recovered (18 November re-audit)
+
+Original conversation indexed at **5 November 2026, 17:15:12 UTC**, includes another Scopus Search A version. It differs from the broader previously archived TITLE-ABS-KEY string above; keep both as distinct recorded expressions until the original Scopus search-history export links each executed query to its result count.
+
+### Scopus Search A — fully recovered version
+
+```text
+TITLE-ABS-KEY((BRD4 OR "bromodomain-containing protein 4" OR "bromodomain 4" OR "BET-BRD4" OR "BET bromodomain*") AND (repurpos* OR reposition* OR "existing drug*" OR "approved drug*" OR "FDA-approved drug*" OR "known drug*" OR "investigational drug*" OR "drug librar*" OR "drug screening" OR ("virtual screening" OR "high-throughput screening" OR "biochemical screening" OR "pharmacophore screening" OR "structure-based screening" OR "ligand-based screening" OR "similarity screening" OR "database mining" OR "molecular docking") AND (drug* OR compound* OR inhibitor* OR ligand*)))
+```
+
+**Interpretation warning:** This archived expression contains an AND before the nested screening terms; do not silently change the logic or claim it is the only Scopus Search A variant. Other original-chat result excerpts show a different Scopus Search A string with additional pharmacological compound terms.
+
+### Scopus Search B — recovered fragment only
+
+```text
+TITLE-ABS-KEY((BRD4 OR "bromodomain-containing protein 4" OR "bromodomain 4" OR "BET-BRD4") AND ("virtual screening" OR "high-throughput screening" OR "biochemical screening" OR "drug screening" OR "pharmacophore screening" OR "pharmacophore-based screening" OR "ligand-based screening" OR "structure-based screening" OR "
+```
+
+**NOT the complete query**; the original conversation retrieval truncates this expression after the final visible quotation mark. Do not run it as-is.
+
+### Earlier user's Scopus query — incomplete transcript fragment
+
+A user-provided Scopus query at **5 November 2026, 17:06 UTC** began with `TITLE-ABS-KEY ( ( repurpos* OR "drug repurposing"...` and included the closing clause `( BRD4 OR BET ) W/3 ( phenotype* OR "gene expression" OR transcript* OR transcriptional )`. The middle of the expression has not been retrieved. This is evidence of another distinct historical query, **not** a reconstructable complete search string.
+
+### Remaining exact-query evidence gaps after searching original chat and Library
+
+- Europe PMC Search 2: **67** records and **24** overlaps reported; full Boolean text unavailable in accessible original message.
+- Embase Search 2: **111** records and **47** overlaps reported; full Boolean text unavailable in accessible original message.
+- Embase Search 1: recorded only up to `'molecular docking':ti,ab,kw`; trailing expression not retrievable.
+- Web of Science: no verified historical exact query retrieved; no new query is attributed to original search.
+- Scopus exports: `export_e33d2282-2165-44a5-b0e2-854802c7fd68_2026-11-05T170737.422083188.csv`, `export_1d254ca2-948a-475d-9c45-2f6f13848f87_2026-11-05T171719.377607191.csv`, `export_e294a87c-7431-405e-a936-bb497012f289_2026-11-05T172207.23174059.csv` recorded in `BRD4_Repurposing_Source_Provenance.csv`. Exact query/export mapping has not been established.
