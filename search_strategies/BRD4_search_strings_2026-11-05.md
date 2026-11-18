@@ -94,14 +94,35 @@ NOT
 )
 ```
 
-## Europe PMC
+## Europe PMC — original chat recovered (5 November 2026)
 
-Two searches were associated with these export filenames:
+### Europe PMC Search 1 — 257 records in initial report
 
-- `europepmc (1).xml` — Europe PMC Search 1.
-- `europepmc.xml` — Europe PMC Search 2.
+Recovered from the original conversation message dated **5 November 2026, 17:50:44 UTC**:
 
-**Exact Boolean queries have not been recovered** and are not fabricated here.
+```text
+(TITLE_ABS:BRD4 OR TITLE_ABS:"bromodomain-containing protein 4" OR TITLE_ABS:"bromodomain 4" OR TITLE_ABS:"BET bromodomain" OR TITLE_ABS:"BET bromodomains") AND (TITLE_ABS:repurpos* OR TITLE_ABS:reposition* OR TITLE_ABS:"FDA-approved" OR TITLE_ABS:"approved drugs" OR TITLE_ABS:"existing drugs" OR TITLE_ABS:"drug library" OR TITLE_ABS:"drug libraries" OR TITLE_ABS:"kinase inhibitors" OR TITLE_ABS:"virtual screening" OR TITLE_ABS:"high-throughput screening" OR TITLE_ABS:"biochemical screening" OR TITLE_ABS:"pharmacophore screening" OR TITLE_ABS:"structure-based screening" OR TITLE_ABS:"ligand-based screening" OR TITLE_ABS:"drug screening" OR TITLE_ABS:"molecular docking" OR TITLE_ABS:"database mining")
+```
+
+The original conversation associates Search 1 with `europepmc.xml` and **257 records**; a later XML recount gave **258**. This discrepancy is retained, not reconciled without the export.
+
+### Europe PMC Search 2 — 67 records
+
+The original conversation records a second BET-family search returning **67 records**, with **24** overlapping Search 1. Its complete original Boolean query could not yet be retrieved from the accessible conversation excerpts. Initial conversation count was **300 unique Europe PMC source records** (257 + 67 − 24). The second export was associated with `europepmc (1).xml`, subject to file-level verification.
+
+## Embase — original chat recovered (5 November 2026)
+
+The original conversation dated **5 November 2026, 18:13:27 UTC** reports **411 results for Search 1**, **111 for Search 2**, **47 overlapping**, and **475 unique Embase records**.
+
+### Embase Search 1 — recovered portion
+
+The available history preserves this exact expression up to its final visible term; it may continue beyond `molecular docking`, so this is **not represented as a complete executed query**:
+
+```text
+(BRD4:ti,ab,kw OR 'bromodomain-containing protein 4':ti,ab,kw OR 'bromodomain 4':ti,ab,kw OR 'BET bromodomain':ti,ab,kw OR 'BET bromodomains':ti,ab,kw) AND (repurpos*:ti,ab,kw OR reposition*:ti,ab,kw OR 'approved drugs':ti,ab,kw OR 'FDA-approved':ti,ab,kw OR 'existing drugs':ti,ab,kw OR 'drug library':ti,ab,kw OR 'drug libraries':ti,ab,kw OR 'compound library':ti,ab,kw OR 'compound libraries':ti,ab,kw OR 'kinase inhibitors':ti,ab,kw OR 'virtual screening':ti,ab,kw OR 'high-throughput screening':ti,ab,kw OR 'biochemical screening':ti,ab,kw OR 'pharmacophore screening':ti,ab,kw OR 'structure-based screening':ti,ab,kw OR 'ligand-based screening':ti,ab,kw OR 'drug screening':ti,ab,kw OR 'molecular docking':ti,ab,kw
+```
+
+Embase Search 2 used per-term `:ti,ab,kw` syntax. Its full Boolean text has not been recovered.
 
 ## Search-documentation and provenance note
 
